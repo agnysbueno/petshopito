@@ -1,0 +1,304 @@
+/*********************************** HOME *************************************/
+.home {
+    background-color: var(--blue);
+    height: 700px;
+    position: relative;
+}
+
+header{
+    padding-top: 20px;
+    position: relative;
+}
+
+button{
+    width: 8rem;
+    height: 2.4rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: var(--pink);
+    border-radius: 10px;
+}
+
+#sidebar-wrapper {
+    display: none;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    }
+
+.btn-menu{
+    z-index: 10;
+}
+
+.btn-menu button{
+    font-size: 0;
+    width: auto;
+    height: auto;
+    background-color: var(--blue);
+    border: transparent;
+    border-radius: 8px;
+    display: flex;
+}
+
+#sidebar-wrapper.toggled {
+    padding: 15rem 5rem 0 0;
+    width: 20rem;
+    background-color: var(--blue);
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar-wrapper.toggled ul{
+    flex-direction: column;
+}
+
+#sidebar-wrapper.toggled li{
+    font-size: 2rem;
+}
+
+.info{
+    margin-top: 9.5rem;
+}
+
+.info h1, .info p{
+    color: white;
+}
+
+.info p{
+    font-size: 2rem;
+}
+
+.info button{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
+}
+
+.service-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px var(--pink) solid;
+}
+
+.img-pets{
+    height: 280px;
+    position: absolute;
+    bottom: -54px;
+    right: 0;
+}
+
+
+/********************************* SERVICES ***********************************/
+.services{
+    height: 930px;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: var(--blue);
+    text-align: center;
+}
+
+.card{
+    padding: 0 15px;
+    width: 100%;
+    max-width: 40rem;
+    height: 14rem;
+    border-radius: 23px;
+    border: 0;
+    position: relative;
+}
+
+.card.pink{
+    background-color: var(--pink);
+    color: var(--blue);
+}
+
+.card.blue{
+    background-color: var(--blue);
+    color: white;
+}
+
+.card > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/********************************** CONTACT ***********************************/
+.contact{
+    position: relative;
+    height: 800px;
+}
+
+.form{
+    height: 700px;
+    background-color: #f4dfe69c;
+    border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    left: 4%;
+    z-index: 10;
+}
+
+.app-icon{
+    font-size: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+
+.map{
+    position: relative;
+    width: 240px;
+}
+
+iframe{
+    width: 100%;
+    height: 213px;
+    border-radius: 10px;
+}
+
+.btn-map{
+    width: 12.7rem;
+    height: 2.8rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    right: 25%;
+    bottom: 20px;
+}
+
+label{
+    margin-top: 10px;
+    color: var(--blue);
+    font-size: 1.6rem;
+}
+
+input{
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #3749999a solid;
+}
+
+form button{
+    margin: 25px 25%;
+    width: 11.6rem;
+    height: 3rem;
+    color: white;
+    background-color: var(--blue);
+}
+
+#background{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/********************************** FOOTER ***********************************/
+footer{
+    background-color: var(--blue);
+    position: relative;
+}
+
+footer h3{
+    color: var(--pink);
+    font-size: 1.2rem;
+}
+
+footer p{
+    color: var(--pink);
+    font-size: 1.1rem;
+}
+
+footer > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media(min-width: 800px) {  
+    /************** HOME ****************/
+    .home{
+        height: 1024px;
+    }
+    header {
+        padding-top: 40px;
+    }
+
+    li {
+        font-size: 2.8rem;
+    }
+
+    button {
+        margin-left: 30px;
+        width: 20rem;
+        height: 5rem;
+        font-size: 2.8rem;
+    }
+
+    .btn-menu button{
+        display: none;
+    }
+
+    #sidebar-wrapper {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sidebar-wrapper img{
+        height: 70px;
+    }
+
+    #sidebar-wrapper ul {
+        margin-top: 1.5rem;
+    }
+
+    .home info {
+        margin-top: 6rem;
+    }
+
+    h1{
+        font-size: 9rem;
+    }
+
+    .info p {
+        font-size: 3.8rem;
+    }
+
+    .info button{
+        width: 42rem;
+        height: 6rem;
+        font-size: 2.8rem;
+        margin: 0 30% 0 0;
+    }
+
+    .img-pets{
+        height: 500px;
+        bottom: -100px;
+    }
+
+    /*************** SERVICES ****************/
+
+    .services{
+        max-width: 1000px;
+        height: 700px;
+    }
+
+    h2{
+        font-size: 7rem;
+    }
+}
+

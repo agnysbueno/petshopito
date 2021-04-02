@@ -11,40 +11,53 @@
     --btn-text: #252222;
 }
 
-html{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
    font-size: 62.5%; 
 }
 
-body{
+body {
     font-family: 'Baloo Da 2', cursive;
 }
 
-h1, h2, h3, label, p{
+h1, h2, h3, label, p, li {
     font-weight: 600;
 }
 
-h1, h2{
+h1, h2 {
     font-size: 3rem;
 }
 
-h3{
+h3 {
     font-size: 2.4rem;
 }
 
-label{
+label {
     font-size: 2rem;
 }
 
-p{
+p {
     font-size: 1.4rem;
 }
 
 button {
-    font: 500 2rem;
     cursor: pointer;
+    border: 0;
+}
+
+button:hover{
+    filter: brightness(0.7);
+}
+
+li {
+    list-style: none;
+    color: white;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
 }
