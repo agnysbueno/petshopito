@@ -138,6 +138,7 @@ h2{
 }
 
 .form{
+    padding-top: 30px;
     height: 700px;
     background-color: #f4dfe69c;
     border-radius: 10px;
@@ -147,8 +148,13 @@ h2{
     z-index: 10;
 }
 
+.c-infos, .c-form{
+    width: 80%;
+}
+
 .app-icon{
     font-size: 0;
+    margin: 0 8px;
     width: auto;
     height: auto;
     background-color: transparent;
@@ -173,7 +179,7 @@ iframe{
     font-size: 1rem;
     position: absolute;
     right: 25%;
-    bottom: 20px;
+    bottom: 40px;
 }
 
 label{
@@ -199,6 +205,9 @@ form button{
 }
 
 #background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     bottom: 0;
 }
@@ -300,5 +309,66 @@ footer > img{
     h2{
         font-size: 7rem;
     }
+
+    /*************** CONTACT ****************/
+    .form{
+        padding-top: 5vw;
+    }
+    .c-infos{
+        width: 35%;
+    }
+
+    .c-form{
+        width: 50%;
+    }
+
+    .map{
+        width: 25vw;
+    }
+
+    .app-icon img{
+        height: 3.6vw;
+    }
+
+    iframe{
+        height: 20vw;
+    }
+
+    form label{
+        font-size: 3rem;
+    }
+
+    form input{
+        font-size: 2rem;
+    }
+
+    form button{
+        width: 50%;
+        height: 5.2rem;
+        color: white;
+        background-color: var(--blue);
+    }
+
+    /*************** FOOTER ****************/
+
+    footer li, footer p{
+        font-size: 2rem;
+    }
+
+    footer h3{
+        font-size: 2.5rem;
+    }
+
+    footer p > img{
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    footer > img{
+        height: 120px;
+    }
+
+    
+
 }
 
