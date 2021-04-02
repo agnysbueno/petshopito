@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&display=swap');
+
+:root {
+    --pink:#F1C3CD;
+    --blue: #374999;
+    --blue-title: #7680AE; 
+    --gray: #CCCCCC;
+    --gray-input: #F5F5F5;
+    --gray-icon: #BCBCBC;
+    --gray-placeholder: #777981;
+    --btn-text: #252222;
+}
+
+html{
+   font-size: 62.5%; 
+}
+
+body{
+    font-family: 'Baloo Da 2', cursive;
+}
+
+h1, h2, h3, label, p{
+    font-weight: 600;
+}
+
+h1, h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+label{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.4rem;
+}
+
+button {
+    font: 500 2rem;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
