@@ -1,0 +1,122 @@
+body{
+    position: relative;
+    height: 100vh;
+}
+
+main{
+    position: relative;  
+    margin: auto;
+    padding-top: 40px;
+    width: 80%;
+    height: 70vh;
+}
+
+h1{
+    text-align: center;
+    color: var(--blue);
+}
+
+/*********************************** FORM *************************************/
+
+label{
+    width: 100%;
+    margin-top: 30px;
+    color: var(--blue);
+}
+
+div.species{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+label.btn-specie{
+    margin: 0;
+    background-color: var(--gray-input);
+    border-radius: 23px 0;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=radio]:checked + label {
+        background-color: #f1c3cd80;
+}
+
+input.pet{
+    width: 100%;
+    background-color: var(--gray-input);
+    border-radius: 10px;
+    padding: 10px;
+    border: 0;
+    font-size: 1.6rem;
+}
+
+input.age{
+    width: 30%;
+    align-self: flex-start;
+}
+
+input.color{
+    width: 50%;
+    align-self: flex-end;
+}
+
+button.btn-create-pet{
+    margin-top: 30px;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--pink);
+}
+
+/*********************************** NAV **************************************/
+
+.menu-nav{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 5px var(--pink) solid;
+}
+
+label.nav{
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px 0;
+}
+
+input[type=radio]:checked + label.nav {
+    background-color: var(--pink);
+}
+
+input[type=radio]:checked + label.nav svg path{
+    fill: var(--blue);
+}
+
+@media(min-width: 800px) { 
+    main{
+        width: 500px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    label, input.login, button.btn-create-pet{
+        font-size: 2.8rem;
+    }
+
+    button.btn-create-pet{
+        font-weight: 600;
+        height: 70px;
+    }
+
+}

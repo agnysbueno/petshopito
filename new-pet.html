@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <title>Petshopito | Login</title>
+    <link rel="shortcut icon" href="icons/icon.ico"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <!-- CSS próprio -->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/pages/new-pet.css'>
+</head>
+<body>
+    <main>
+        <h1>Novo Pet</h1>
+        <form action="post" class="d-flex flex-wrap justify-content-between align-items-center">
+            <label for="pet-name">Nome</label>
+            <input class="pet name" type="text" name="name" id="pet-name" placeholder="Qual o nome do seu bichinho?">
+
+            <label for="pet-specie">Espécie</label>
+            <div class="species">
+                <input class="pet specie" type="radio" name="specie" id="cat" value="dog" checked hidden>
+                <label for="cat" class="btn-specie">
+                    <img src="./icons/cat.svg" alt="gato">
+                </label>
+                <input class="pet specie" type="radio" name="specie" id="dog" value="dog" hidden>
+                <label for="dog" class="btn-specie">
+                    <img src="./icons/dog.svg" alt="cachorro">
+                </label>
+            </div>
+
+            <label for="pet-breed" class="">Raça</label>
+            <input class="pet breed" type="text" name="breed" id="pet-breed" placeholder="Qual a raça do seu bichinho?">
+
+            <label for="pet-age" class="col-6">Raça</label>
+            <label for="pet-color" class="col-6">Cor</label>
+            <input class="pet age" type="text" name="age" id="pet-age" placeholder="Anos">
+            <input class="pet color" type="text" name="color" id="pet-color" placeholder="Cor da Pelagem">
+        </form>
+
+        <button class="btn-create-pet">Cadastrar Pet</button>
+    </main>
+    <div class="menu-nav d-flex justify-content-evenly">
+        <input class="nav" type="radio" name="nav" id="home" hidden>
+        <label for="home" class="nav">
+            <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.6023 6.05214L5.0004 13.9604V22.4957C5.0004 22.7167 5.08819 22.9286 5.24445 23.0849C5.40072 23.2412 5.61267 23.329 5.83366 23.329L11.6697 23.3138C11.8899 23.3127 12.1008 23.2245 12.2562 23.0683C12.4116 22.9122 12.4988 22.7009 12.4988 22.4806V17.4961C12.4988 17.2751 12.5866 17.0631 12.7428 16.9068C12.8991 16.7506 13.111 16.6628 13.332 16.6628H16.6651C16.8861 16.6628 17.0981 16.7506 17.2543 16.9068C17.4106 17.0631 17.4984 17.2751 17.4984 17.4961V22.4769C17.498 22.5866 17.5193 22.6952 17.5611 22.7966C17.6028 22.898 17.6641 22.9902 17.7415 23.0678C17.8189 23.1455 17.9109 23.2071 18.0122 23.2491C18.1134 23.2912 18.222 23.3128 18.3317 23.3128L24.1656 23.329C24.3866 23.329 24.5985 23.2412 24.7548 23.0849C24.9111 22.9286 24.9989 22.7167 24.9989 22.4957V13.9547L15.3991 6.05214C15.2862 5.96117 15.1456 5.91157 15.0007 5.91157C14.8557 5.91157 14.7151 5.96117 14.6023 6.05214ZM29.7693 11.4273L25.4155 7.83846V0.624952C25.4155 0.459205 25.3496 0.300246 25.2324 0.183044C25.1152 0.0658431 24.9563 0 24.7905 0H21.8741C21.7083 0 21.5494 0.0658431 21.4322 0.183044C21.315 0.300246 21.2491 0.459205 21.2491 0.624952V4.40643L16.5865 0.570269C16.139 0.202057 15.5775 0.000736061 14.9981 0.000736061C14.4186 0.000736061 13.8571 0.202057 13.4096 0.570269L0.226805 11.4273C0.163522 11.4796 0.111165 11.5438 0.0727266 11.6164C0.0342879 11.6889 0.0105204 11.7683 0.00278216 11.8501C-0.0049561 11.9318 0.00348653 12.0143 0.0276277 12.0927C0.0517688 12.1712 0.0911353 12.2441 0.143478 12.3074L1.4715 13.9219C1.5237 13.9853 1.58791 14.0379 1.66044 14.0765C1.73298 14.1151 1.81242 14.1391 1.89422 14.147C1.97603 14.1548 2.05858 14.1465 2.13716 14.1225C2.21574 14.0984 2.2888 14.0591 2.35216 14.0067L14.6023 3.91689C14.7151 3.82592 14.8557 3.77631 15.0007 3.77631C15.1456 3.77631 15.2862 3.82592 15.3991 3.91689L27.6497 14.0067C27.7129 14.0591 27.7859 14.0985 27.8644 14.1226C27.9428 14.1467 28.0253 14.1552 28.107 14.1474C28.1888 14.1397 28.2682 14.1159 28.3407 14.0775C28.4133 14.0391 28.4775 13.9867 28.5298 13.9234L29.8579 12.309C29.9101 12.2453 29.9493 12.172 29.9732 12.0932C29.9971 12.0144 30.0051 11.9316 29.9969 11.8497C29.9886 11.7678 29.9643 11.6883 29.9253 11.6158C29.8862 11.5433 29.8332 11.4792 29.7693 11.4273Z" fill="#BCBCBC"/>
+            </svg>
+        </label>
+
+        <input class="nav" type="radio" name="nav" id="pet" checked hidden>
+        <label for="pet" class="nav">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.6875 10.6098C21.729 10.6098 23.384 8.53306 23.384 5.97128C23.384 3.4095 21.729 1.33276 19.6875 1.33276C17.6459 1.33276 15.991 3.4095 15.991 5.97128C15.991 8.53306 17.6459 10.6098 19.6875 10.6098Z" fill="#BCBCBC"/>
+                <path d="M10.3125 10.6098C12.354 10.6098 14.009 8.53306 14.009 5.97128C14.009 3.4095 12.354 1.33276 10.3125 1.33276C8.27095 1.33276 6.61597 3.4095 6.61597 5.97128C6.61597 8.53306 8.27095 10.6098 10.3125 10.6098Z" fill="#BCBCBC"/>
+                <path d="M3.22266 15.2877C5.00248 15.2877 6.44531 13.8449 6.44531 12.0651C6.44531 10.2852 5.00248 8.84241 3.22266 8.84241C1.44283 8.84241 0 10.2852 0 12.0651C0 13.8449 1.44283 15.2877 3.22266 15.2877Z" fill="#BCBCBC"/>
+                <path d="M26.7773 15.2877C28.5572 15.2877 30 13.8449 30 12.0651C30 10.2852 28.5572 8.84241 26.7773 8.84241C24.9975 8.84241 23.5547 10.2852 23.5547 12.0651C23.5547 13.8449 24.9975 15.2877 26.7773 15.2877Z" fill="#BCBCBC"/>
+                <path d="M14.9999 13.2422C11.6661 13.2422 9.16593 14.2916 7.35661 16.4503C5.75395 18.3625 4.88354 20.8796 4.0419 23.2737C3.00749 26.2076 5.5521 29.1707 8.62464 28.5805C11.1455 28.0957 14.6076 27.2789 19.556 28.2306C21.463 28.5974 21.6402 28.6557 22.1587 28.6557C24.8672 28.6556 26.9022 25.9521 25.9578 23.2736C24.2742 18.4839 22.4794 13.2422 14.9999 13.2422ZM17.3437 21.8502H15.8788V23.315C15.8788 23.8004 15.4853 24.1939 14.9999 24.1939C14.5145 24.1939 14.121 23.8004 14.121 23.315V21.8502H12.6562C12.1708 21.8502 11.7773 21.4567 11.7773 20.9713C11.7773 20.4859 12.1708 20.0924 12.6562 20.0924H14.121V18.6275C14.121 18.1422 14.5145 17.7486 14.9999 17.7486C15.4853 17.7486 15.8788 18.1422 15.8788 18.6275V20.0924H17.3437C17.8291 20.0924 18.2226 20.4859 18.2226 20.9713C18.2226 21.4567 17.8291 21.8502 17.3437 21.8502Z" fill="#BCBCBC"/>
+            </svg>
+        </label>
+
+        <input class="nav" type="radio" name="nav" id="service" hidden>
+        <label for="service" class="nav">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M12.0326 30C13.9913 30 15.5791 28.4122 15.5791 26.4535C15.5791 24.4949 13.9913 22.9071 12.0326 22.9071C10.074 22.9071 8.48621 24.4949 8.48621 26.4535C8.48621 28.4122 10.074 30 12.0326 30Z" fill="#BCBCBC"/>
+                <path d="M22.3825 22.9072C20.4239 22.9072 18.8361 24.495 18.8361 26.4536C18.8361 28.4122 20.4239 30 22.3825 30C24.3411 30 25.9289 28.4122 25.9289 26.4536C25.9289 24.495 24.3411 22.9072 22.3825 22.9072Z" fill="#BCBCBC"/>
+                <path d="M28.4259 19.2883H9.93374L9.57186 17.1894H24.7709C25.218 17.1907 25.6202 16.9178 25.7841 16.5018L29.4029 7.38242C29.6228 6.82461 29.3488 6.19415 28.791 5.97433C28.6632 5.92394 28.527 5.89828 28.3897 5.89871H7.69008L6.82156 0.904749C6.73236 0.3767 6.27139 -0.00744539 5.73592 4.66757e-05H1.57429C0.974713 4.66757e-05 0.488647 0.486112 0.488647 1.08569C0.488647 1.68527 0.974713 2.17133 1.57429 2.17133H4.83122L7.94339 20.5549C8.03259 21.0829 8.49357 21.4671 9.02904 21.4596H28.4259C29.0254 21.4596 29.5115 20.9735 29.5115 20.3739C29.5115 19.7744 29.0254 19.2883 28.4259 19.2883Z" fill="#BCBCBC"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="30" height="30" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </label>
+
+        <input class="nav" type="radio" name="nav" id="profile" hidden>
+        <label for="profile" class="nav">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.0001 14.672C18.3355 14.672 21.0397 11.3876 21.0397 7.33603C21.0397 3.2844 20.1519 0 15.0001 0C9.8482 0 8.96021 3.2844 8.96021 7.33603C8.96021 11.3876 11.6644 14.672 15.0001 14.672Z" fill="#BCBCBC"/>
+                <path d="M3.59225 25.8731C3.59122 25.6261 3.59019 25.8035 3.59225 25.8731V25.8731Z" fill="#BCBCBC"/>
+                <path d="M26.4073 26.066C26.4106 25.9984 26.4085 25.5969 26.4073 26.066V26.066Z" fill="#BCBCBC"/>
+                <path d="M26.3945 25.5769C26.2826 18.519 25.3608 16.5079 18.3072 15.2349C18.3072 15.2349 17.3142 16.5001 15 16.5001C12.6857 16.5001 11.6926 15.2349 11.6926 15.2349C4.71588 16.494 3.73805 18.4753 3.60948 25.3476C3.59893 25.9088 3.59405 25.9383 3.59216 25.8731C3.59259 25.9952 3.59311 26.2209 3.59311 26.6146C3.59311 26.6146 5.27242 30 15 30C24.7273 30 26.4068 26.6146 26.4068 26.6146C26.4068 26.3617 26.407 26.1858 26.4073 26.0661C26.4054 26.1064 26.4016 26.0283 26.3945 25.5769Z" fill="#BCBCBC"/>
+            </svg>
+        </label>
+    </div>
+</body>
+</html>
