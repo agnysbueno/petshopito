@@ -4,15 +4,15 @@ body{
 
 button.back{
     position: absolute;
-    top: -55px;
-    left: -12px;
+    top: -45px;
+    left: -20px;
     background-color: transparent;
 }
 
 main{
     position: relative;
-    margin: 80px auto 0;
-    width: 80%;
+    margin: 70px auto 0;
+    width: 75%;
     height: 70vh;
 }
 
@@ -20,18 +20,15 @@ label{
     color: white;
 }
 
-input.login{
+input.create{
     background-color: transparent;
     border: 0;
     padding: 0 10px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
-}
-
-input.email{
     width: 100%;
     border-bottom: white 2px solid;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 div.password{
@@ -39,24 +36,17 @@ div.password{
     justify-content: space-between;
     width: 100%;
     border-bottom: white 2px solid;
+    margin-bottom: 20px;
 }
 
 input.pass{
     width: 80%;
+    border: 0;
+    margin-bottom: 0;
 }
 
-a{
-    color: var(--pink);
-    font-size: 1.5rem;
-}
-
-a:hover{
-    text-decoration: underline;
-    color: var(--pink);
-}
-
-button.btn-login{
-    margin: 70px 0 30px 0;
+button.btn-create-account{
+    margin: 30px 0 15px 0;
     width: 100%;
     font-size: 2rem;
     font-weight: 500;
@@ -71,12 +61,19 @@ p{
 }
 
 p > a{
+    color: var(--pink);
     font-size: 1.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--pink);
 }
 
 .decoration{
     position: absolute;
     right: 0;
+    bottom: 2px;
 }
 
 @media(min-width: 800px) {  
@@ -88,11 +85,11 @@ p > a{
         left: -40px;
     }
 
-    label, input.login, button.btn-login{
+    label, input.create, button.btn-create{
         font-size: 2.8rem;
     }
 
-    button.btn-login{
+    button.btn-create-account{
         font-weight: 600;
         height: 70px;
     }

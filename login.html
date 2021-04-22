@@ -17,6 +17,9 @@
 </head>
 <body>
     <main>
+        <button class="back" onClick="history.go(-1)">
+            <img src="./icons/back.svg" alt="voltar">
+        </button>
         <form class="login" method="post">
             <label for="email-login" class="mb-4">E-mail</label>
             <input class="login email" type="email" name="email" id="email-login" placeholder="email@mail.com">
@@ -31,7 +34,7 @@
         </form>
         <a href="#">Esqueci minha senha</a>
         <button class="btn-login">Entrar</button>
-        <p>Não tem uma conta? <a href="#" class="p-2">Cadastrar</a></p>
+        <p>Não tem uma conta? <a href="createAccount.html" class="p-2">Cadastrar</a></p>
     </main>
     <img src="./icons/patas.png" class="decoration" alt="três patas rosas">
     <script>
