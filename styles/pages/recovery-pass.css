@@ -12,23 +12,12 @@ button.back{
 main{
     position: relative;
     margin: 70px auto 0;
-    width: 75%;
+    width: 80%;
     height: 70vh;
 }
 
 label{
     color: white;
-}
-
-input.create{
-    background-color: transparent;
-    border: 0;
-    padding: 0 10px;
-    font-size: 1.6rem;
-    color: white;
-    width: 100%;
-    border-bottom: white 2px solid;
-    margin-bottom: 20px;
 }
 
 div.password{
@@ -40,6 +29,11 @@ div.password{
 }
 
 input.pass{
+    background-color: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-size: 1.6rem;
+    color: white;
     width: 80%;
     border: 0;
     margin-bottom: 0;
@@ -49,29 +43,14 @@ input.pass{
     padding-bottom: 5px;
 }
 
-button.btn-create-account{
-    margin: 30px 0 15px 0;
+button.btn-recovery-pass{
+    margin-top: 90px;
     width: 100%;
     font-size: 2rem;
     font-weight: 500;
     height: 50px;
     border-radius: 10px;
     background-color: var(--pink);
-}
-
-p{
-    color: white;
-    text-align: center;
-}
-
-p > a{
-    color: var(--pink);
-    font-size: 1.5rem;
-}
-
-a:hover{
-    text-decoration: underline;
-    color: var(--pink);
 }
 
 .decoration{
@@ -93,16 +72,9 @@ a:hover{
         font-size: 2.8rem;
     }
 
-    button.btn-create-account{
+    button.btn-recovery-pass{
         font-weight: 600;
         height: 70px;
     }
 
-    a{
-        font-size: 2rem;
-    }
-
-    p, p > a{
-        font-size: 1.8rem;
-    }
 }
