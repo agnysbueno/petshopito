@@ -2,13 +2,6 @@ body{
     background-color: var(--blue);
 }
 
-button.back{
-    position: absolute;
-    top: -45px;
-    left: -20px;
-    background-color: transparent;
-}
-
 main{
     position: relative;
     margin: 70px auto 0;
@@ -64,11 +57,7 @@ button.btn-recovery-pass{
         width: 500px;
     }
 
-    button.back{
-        left: -40px;
-    }
-
-    label, input.create, button.btn-create{
+    label, input.create, button.btn-recovery-pass{
         font-size: 2.8rem;
     }
 
