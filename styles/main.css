@@ -61,3 +61,23 @@ li {
 a {
     text-decoration: none;
 }
+
+input:focus{
+    outline: transparent;
+}
+
+::-webkit-input-placeholder {
+    color: var(--gray-placeholder);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color:  var(--gray-placeholder);  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color:  var(--gray-placeholder);  
+ }
+ 
+ :-ms-input-placeholder {  
+    color:  var(--gray-placeholder);  
+ }

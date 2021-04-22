@@ -92,6 +92,11 @@ button{
     right: 0;
 }
 
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
 
 /********************************* SERVICES ***********************************/
 .services{
@@ -366,9 +371,7 @@ footer > img{
     
     footer > img{
         height: 120px;
-    }
-
-    
+    } 
 
 }
 

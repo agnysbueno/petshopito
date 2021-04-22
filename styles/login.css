@@ -1,0 +1,78 @@
+body{
+    background-color: var(--blue);
+}
+
+main{
+    margin: 70px auto 0;
+    width: 80%;
+    height: 70vh;
+}
+
+label{
+    color: white;
+}
+
+input.login{
+    background-color: transparent;
+    border: 0;
+    padding: 0 10px;
+    font-size: 2rem;
+    color: white;
+}
+
+input.email{
+    width: 100%;
+    border-bottom: white 2px solid;
+    margin-bottom: 50px;
+}
+
+div.password{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: white 2px solid;
+}
+
+input.pass{
+    width: 80%;
+}
+
+a{
+    color: var(--pink);
+    font-size: 1.5rem;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--pink);
+}
+
+button.btn-login{
+    margin: 70px 0 30px 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--pink);
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+p > a{
+    font-size: 1.5rem;
+}
+
+.decoration{
+    position: absolute;
+    right: 0;
+}
+
+@media(min-width: 800px) {  
+    main{
+        width: 500px;
+    }
+}
