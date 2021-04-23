@@ -20,9 +20,9 @@
         <button class="back" onClick="history.go(-1)">
             <img src="./icons/back.svg" alt="voltar">
         </button>
-        <form class="create" method="post">
+        <form class="create" action="http://denan.com.br/barueri/projeto11/create-account.php" method="post">
             <label for="name-create" class="">Nome</label>
-            <input class="create name" type="email" name="name" id="name-create" placeholder="Como você quer ser chamado?">
+            <input class="create name" type="text" name="name" id="name-create" placeholder="Como você quer ser chamado?">
             
             <label for="phone-create" class="">Telefone</label>
             <input class="create phone" type="text" name="phone" id="phone-create" placeholder="(xx)xxxxx-xxx">
@@ -45,8 +45,9 @@
                     <img src="./icons/eye-close.svg" id="olho2">
                 </div>
             </div>
-        </form>
-        <button class="btn-create-account">Cadastrar</button>
+
+            <button type="submit" class="btn-create-account">Cadastrar</button>
+        </form>       
         <p>Já tem uma conta? <a href="login.html" class="p-2">Fazer Login</a></p>
     </main>
     <img src="./icons/patas.png" class="decoration" alt="três patas rosas">

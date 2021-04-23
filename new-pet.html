@@ -18,7 +18,8 @@
 <body>
     <main>
         <h1>Novo Pet</h1>
-        <form action="post" class="d-flex flex-wrap justify-content-between align-items-center">
+        <form action="http://denan.com.br/barueri/projeto11/create-pet.php" method="post" 
+            class="d-flex flex-wrap justify-content-between align-items-center">
             <label for="pet-name">Nome</label>
             <input class="pet name" type="text" name="name" id="pet-name" placeholder="Qual o nome do seu bichinho?">
 
@@ -41,9 +42,11 @@
             <label for="pet-color" class="col-6">Cor</label>
             <input class="pet age" type="text" name="age" id="pet-age" placeholder="Anos">
             <input class="pet color" type="text" name="color" id="pet-color" placeholder="Cor da Pelagem">
+
+            <button type="submit" class="btn-create-pet">Cadastrar Pet</button>
         </form>
 
-        <button class="btn-create-pet">Cadastrar Pet</button>
+        
     </main>
     <div class="menu-nav d-flex justify-content-evenly">
         <input class="nav" type="radio" name="nav" id="home" hidden>
