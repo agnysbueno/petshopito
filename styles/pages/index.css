@@ -190,7 +190,7 @@ iframe{
 label{
     margin-top: 10px;
     color: var(--blue);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 input{
@@ -198,15 +198,17 @@ input{
     width: 100%;
     background-color: transparent;
     border: 0;
+    font-size: 1.6rem;
     border-bottom: 2px #3749999a solid;
 }
 
 form button{
     margin: 25px 25%;
     width: 11.6rem;
-    height: 3rem;
+    height: 3.5rem;
     color: white;
     background-color: var(--blue);
+    font-size: 1.8rem;
 }
 
 #background{
@@ -215,6 +217,7 @@ form button{
     object-fit: cover;
     position: absolute;
     bottom: 0;
+    left: 0;
 }
 
 
@@ -246,6 +249,7 @@ footer > img{
     .home{
         height: 1024px;
     }
+
     header {
         padding-top: 40px;
     }
@@ -285,11 +289,11 @@ footer > img{
     }
 
     h1{
-        font-size: 9rem;
+        font-size: 6rem;
     }
 
     .info p {
-        font-size: 3.8rem;
+        font-size: 3rem;
     }
 
     .info button{
@@ -312,7 +316,7 @@ footer > img{
     }
 
     h2{
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
     /*************** CONTACT ****************/
