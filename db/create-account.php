@@ -7,12 +7,12 @@ if(!empty($_POST))
 {
 
 	$nome = $_POST['name'];
-		$telefone = $_POST['phone'];
-		$email = $_POST['email'];
-		$senha = $_POST['password'];
+	$telefone = $_POST['phone'];
+	$email = $_POST['email'];
+	$senha = $_POST['password'];
 		
 
-		$sql = "INSERT INTO projeto11_cadastro_usuarios(nome, telefone, email, senha) 
+	$sql = "INSERT INTO projeto11_cadastro_usuarios(nome, telefone, email, senha) 
 	VALUES ('${nome}', '${telefone}', '${email}', '${senha}');";
 	
 $query = $mysqli->query($sql);
