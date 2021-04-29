@@ -1,33 +1,74 @@
 <?php
+include_once("db.php");
 
-	include_once("db.php");
+$msg = '';
 
-	$pdo = pdo_connect_mysql();
-	$msg = '';
+if(!empty($_POST))
+{
 
-	if(!empty($_POST))
-	{
-
-		$nome = $_POST['name'];
+	$nome = $_POST['name'];
 		$telefone = $_POST['phone'];
 		$email = $_POST['email'];
 		$senha = $_POST['password'];
 		
 
-		$sql = "INSERT INTO denan241_designBarueri.projeto11_cadastro_usuarios(nome, telefone, email, senha) 
+		$sql = "INSERT INTO projeto11_cadastro_usuarios(nome, telefone, email, senha) 
 	VALUES ('${nome}', '${telefone}', '${email}', '${senha}');";
-
-		echo $sql;
-		$query = $pdo->query($sql);
-		
-		if ($query){
-				echo "<br>Cadastrado com sucesso!";
-			}
-			else{
-				echo "<br>a query eh: $sql";
-				echo "<br>Houve um erro no cadastrado !";
-			}
-
+	
+$query = $mysqli->query($sql);
+ 
+if ($query){
+		$msg = "Cadastro efetuado com sucesso!";
 	}
-
+	else{
+		$msg = "Houve um erro no cadastro! Tente novamente";
+	}
+}
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="shortcut icon" href="../../public/assets/icons/coin.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Petshopito | Cadastro</title>
+
+		<!-- CSS próprio -->
+		<link rel='stylesheet' type='text/css' media='screen' href='../styles/main.css'>
+    	<link rel='stylesheet' type='text/css' media='screen' href='../styles/messages.css'>
+    </head>
+
+	<body>
+		<div class="message-create">
+			<?php
+				if ($msg == "Cadastrado efetuado com sucesso!") {
+			?> 	
+				<div class="create">
+					<img src="../icons/checked.svg" alt="" width="50px"
+						onload="redirect('')">
+					<p><?=$msg?></p>
+				</div>
+			<?php            
+				} else {
+			?>  
+				<div class="create">
+					<img src="../icons/error.svg" alt="" width="50px"
+						onload="redirect('create-account.html')">
+					<p><?=$msg?></p>
+				</div>
+			<?php            
+				}
+			?> 	
+		</div>
+
+		<script>
+            function redirect(page){
+                setTimeout(function(){
+					location = `http://127.0.0.1:5500/${page}`
+					},5000)
+            }
+        </script>  
+	</body>
+
+</html>
