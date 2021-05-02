@@ -32,6 +32,7 @@ if ($query){
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../icons/icon.ico"/>
         <title>Petshopito | Cadastro</title>
 
 		<!-- CSS próprio -->
@@ -40,9 +41,9 @@ if ($query){
     </head>
 
 	<body>
-		<div class="message-create">
+		<div class="message message-create">
 			<?php
-				if ($msg == "Cadastrado efetuado com sucesso!") {
+				if ($msg == "Cadastro efetuado com sucesso!") {
 			?> 	
 				<div class="create">
 					<img src="../icons/checked.svg" alt="" width="50px"

@@ -1,9 +1,12 @@
-.message-create{
-    background-color: var(--blue);
+.message{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.message-create{
+    background-color: var(--blue);
 }
 
 .create{
@@ -17,11 +20,19 @@
     border-radius: 23px;
 }
 
+.create-pet{
+    background-color: #f1c3cd4d;
+}
+
 p{
     font-size: 2rem;
     margin-top: 20px;
     color: white;
     text-align: center;
+}
+
+p.pet{
+    color: var(--blue);
 }
 
 @media(min-width: 800px) { 
@@ -33,3 +44,4 @@ p{
         font-size: 2.6rem;
     }
 }
+
