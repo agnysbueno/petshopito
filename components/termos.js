@@ -3,7 +3,7 @@ import { View, Image, TextInput, Text, TouchableOpacity } from 'react-native';
 import style from '../styles/style.js';
 
 
-function Login() {
+function Termos() {
     return (
         <View style={style.inputContainer}>
 
@@ -56,4 +56,4 @@ function Login() {
     );
   }
 
-export default Login;
+export default Termos;
