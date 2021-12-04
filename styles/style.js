@@ -2,6 +2,11 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 
 export default	StyleSheet.create({
+                container: {
+                    flex: 1,
+                    backgroundColor: '#374999',
+                    alignItems: 'center'
+                },
                 inputContainer: {
                     position: 'relative',
                     width: '75%',
