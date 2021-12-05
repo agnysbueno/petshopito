@@ -7,6 +7,10 @@ export default	StyleSheet.create({
                     backgroundColor: '#374999',
                     alignItems: 'center'
                 },
+                containerLog: {
+                    flex: 1,
+                    alignItems: 'center'
+                },
                 inputContainer: {
                     position: 'relative',
                     width: '75%',
@@ -14,6 +18,14 @@ export default	StyleSheet.create({
                     height: '70vh',
                     marginTop: 70
                     /* fontFamily: 'BalooDa2_400Regular' */
+                },
+                select: {
+                    position: 'relative',
+                    width: '75%',
+                    maxWidth: 500,
+                    marginTop: 70,
+                    flex: 1,
+                    justifyContent: 'flex-end',
                 },
                 termoContainer:{
                     height: '75vh',
@@ -31,6 +43,89 @@ export default	StyleSheet.create({
                 p: {
                     fontSize: 16
                 },
+                centerTitle: {
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                oneMoreColumn: {
+                    flexDirection: "row",
+                    justifyContent: 'space-between', 
+                },
+                blueTitle: {
+                    fontSize: 30,
+                    fontWeight: '700',
+                    color: '#374999',
+                    marginVertical: 15
+                },
+                twoColumns: {
+                    width: '300px',
+                    flex: 1,
+                    flexDirection: "row",
+                    justifyContent: 'space-evenly',
+                },
+                filledInput: {
+                    backgroundColor: '#F5F5F5',
+                    marginTop: 10,
+                    marginBottom: 10,
+                    borderRadius: 10, 
+                    height: 40,
+                    padding: 10,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                filledInputShort: {
+                    backgroundColor: '#F5F5F5',
+                    marginTop: 10,
+                    marginBottom: 10,
+                    borderRadius: 10,
+                    width: 86,
+                    height: 40,
+                    padding: 10,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                filledInputLong: {
+                    backgroundColor: '#F5F5F5',
+                    marginTop: 10,
+                    marginBottom: 10,
+                    borderRadius: 10,
+                    width: 144,
+                    height: 40,
+                    padding: 10,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                filledInputSemi: {
+                    backgroundColor: '#F5F5F5',
+                    marginTop: 5,
+                    marginBottom: 5,
+                    borderTopLeftRadius: '23px',
+                    borderBottomRightRadius: '23px',
+                    width: 100,
+                    height: 70,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                menuFilledInput: {
+                    width: 66,
+                    height: 57,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                menuFilledInputSemi: {
+                    backgroundColor: '#F1C3CD',
+                    borderTopLeftRadius: '23px',
+                    borderBottomRightRadius: '23px',
+                    width: 66,
+                    height: 57,
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                },
+                pinkLine: {
+                    borderBottomColor: '#F1C3CD',
+                    width: '100%',
+                    borderBottomWidth: '5px'
+                },
                 back: {
                   position: 'absolute',
                   top: -60,
@@ -41,6 +136,11 @@ export default	StyleSheet.create({
                   color: 'white',
                   fontSize: 20
                 },
+                textInputApp:{
+                    color: '#374999',
+                    fontSize: 20,
+                    fontWeight: '600'
+                  },
                 input: {
                     backgroundColor: 'transparent',
                     paddingHorizontal: 10,

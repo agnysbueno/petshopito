@@ -10,18 +10,16 @@ function Login() {
 
     const [ email, setEmail ] = useState('');
     const [ senha, setSenha ] = useState('');
+    const [ usuario, setUsuario ] = useState('');
 
     async function logar(){
         await firebase.auth().signInWithEmailAndPassword(email, senha)
-        .then( (value) => {
+        .then((value) => {
          
-          alert('Bem-vindo: ' + value.user.email);
-          setUser(value.user.email);
+          alert('Bem-vinde!');
+          setUsuario(value.user.email);
       
-          //navigation.navigate('Sobre', {  usuario:value.user.email} );
-    
-          /* navigation.navigate('Reservada', {  usuario:value.user.email} ) */
-    
+          navigation.navigate('NovoPet', { usuario:value.user.email } );
         })
         .catch( (error) => {
             if(error.code === 'auth/invalid-email'){
@@ -34,6 +32,12 @@ function Login() {
         })
 
         setSenha('');
+      }
+
+      async function sair(){
+        await firebase.auth().signOut();
+        setUser('');
+        alert('Saiu do sistema com sucesso!');
       }
 
 
@@ -65,7 +69,8 @@ function Login() {
                         value={senha}
                     />
             </View>
-            <Text style={style.labelB}><TouchableOpacity style={style.link}>
+            <Text style={style.labelB}><TouchableOpacity style={style.link}
+            onPress={ () => navigation.navigate('RecuperarSenha')}>
                     Esqueci minha senha</TouchableOpacity></Text>
             
 
