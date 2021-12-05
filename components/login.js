@@ -12,7 +12,7 @@ function Login() {
     const [ senha, setSenha ] = useState('');
     const [ usuario, setUsuario ] = useState('');
 
-    async function logar(){
+    async function login(){
         await firebase.auth().signInWithEmailAndPassword(email, senha)
         .then((value) => {
          
@@ -75,7 +75,7 @@ function Login() {
             
 
             <TouchableOpacity style={style.button}>
-                <Text style={style.buttonText} onPress={logar}>Entrar</Text>
+                <Text style={style.buttonText} onPress={login}>Entrar</Text>
             </TouchableOpacity>
 
             <Text style={style.label}>Não tem uma conta? <TouchableOpacity style={style.link}
