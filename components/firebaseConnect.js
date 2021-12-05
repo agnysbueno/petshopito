@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
 
-const firebaseConfig = {
+let firebaseConfig = {
   apiKey: "AIzaSyAG-alDwCdqegazUe9bOVtLXR1JzR-ylE8",
   authDomain: "petshopito-mobile.firebaseapp.com",
   databaseURL: "https://petshopito-mobile-default-rtdb.firebaseio.com",
